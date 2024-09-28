@@ -1,0 +1,129 @@
+body {
+    background-color: lightblue;
+}
+
+main {
+    width: 50em;
+    height: 83em;
+    border: solid black 1px;
+    margin-left: 15em;
+    margin-right: 15em;
+    padding: 1em;
+    background-color: #80CFFF;
+}
+
+header, footer {
+    background-color: #69F;
+    padding: 1em;
+    position: relative; /* Important pour que les images soient positionnées par rapport au footer */
+}
+
+header > nav {
+    background-color: #69F;
+    height: 15em;
+    width: 10em;
+    position: fixed;
+    left: 0;
+}
+
+nav > h2 {
+    text-align: center;
+}
+
+section > nav {
+    background-color: #cef;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+footer > img {
+    position: relative;
+}
+
+figcaption {
+    text-align: center;
+}
+
+header figure {
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    width: 25%;
+    margin-left: -0.2em;
+}
+
+section > figure {
+    float: right;
+}
+
+aside {
+    background-color: #69F;
+    position: sticky;
+    right: 0;
+    top: 0;
+    width: 4em;
+    border: black 1px solid;
+    margin-left: auto;
+    padding: 1em;
+    transform: translateY(-900px); 
+}
+
+article > h2 {
+    padding: 0 20px;
+    border-left-width: 4px;
+    border-left-color: blue;
+    border-left-style: double;
+}
+
+ul {
+    list-style-image: url(images/maure.png);
+}
+
+p {
+    text-align: justify;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+h1::first-letter {
+    font-size: 1.5em;
+}
+
+nav {
+    border: black 1px solid;
+}
+
+a:link, a:visited {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: white;
+    background-color: blue;
+}
+
+footer {
+    width: 92%;
+    height: 20em;
+}
+
+
+.img1 {
+    object-fit: cover;
+    position: relative;
+    left: 8em;
+    top: 20px;
+    z-index: 2; /* Place cette image au-dessus de l'autre */
+}
+
+.img2 {
+    position: absolute;
+    z-index: 1; /* Place cette image au-dessus de l'autre */
+    bottom: 20px; /* Place l'image au bas du conteneur */
+    right: 10em; /* Place l'image à droite du conteneur */
+    object-fit: cover; /* S'assure que l'image reste proportionnelle */
+}
